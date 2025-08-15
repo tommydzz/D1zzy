@@ -4,6 +4,8 @@
 
 欢迎来到我的个人网站！这里是我分享想法、项目和推荐的地方，使用 Astro 和 Pure 主题构建。
 
+🌐 **在线访问**: [https://d1zzy.vercel.app/](https://d1zzy.vercel.app/)
+
 ## 🌟 关于我
 
 你好，我是 D1zzy！这是我的网络个人空间，在这里我分享：

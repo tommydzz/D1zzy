@@ -145,8 +145,8 @@ export const integ: IntegrationUserConfig = {
   // Comment system
   waline: {
     enable: true,
-    // Server service link
-    server: 'https://astro-theme-pure-waline.arthals.ink/',
+    // Server service link - 请替换成你自己的 Waline 服务器地址
+    server: 'https://your-waline-server.vercel.app/',
     // Refer https://waline.js.org/en/guide/features/emoji.html
     emoji: ['bmoji', 'weibo'],
     // Refer https://waline.js.org/en/reference/client/props.html
@@ -155,8 +155,8 @@ export const integ: IntegrationUserConfig = {
       pageview: true,
       comment: true,
       locale: {
-        reaction0: 'Like',
-        placeholder: 'Welcome to comment. (Email to receive replies. Login is unnecessary)'
+        reaction0: '点赞',
+        placeholder: '欢迎评论！(邮箱用于接收回复通知，无需登录)'
       },
       imageUploader: false
     }

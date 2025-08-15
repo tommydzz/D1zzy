@@ -4,6 +4,8 @@
 
 Welcome to my personal website built with Astro and the Pure theme. This is where I share my thoughts, projects, and recommendations.
 
+🌐 **Live Site**: [https://d1zzy.vercel.app/](https://d1zzy.vercel.app/)
+
 ## 🌟 About Me
 
 Hi, I'm D1zzy! This is my personal space on the web where I share:
