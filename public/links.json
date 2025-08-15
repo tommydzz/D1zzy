@@ -1,43 +1,56 @@
 {
   "friends": [
     {
-      "id_name": "cf-links",
-      "desc": "Common links included in circle friends",
+      "id_name": "recommended-bloggers",
+      "desc": "Recommended Bloggers - High-quality tech, life, and thinking bloggers",
       "link_list": [
         {
-          "name": "Arthals' ink",
-          "intro": "所见高山远木，阔云流风；所幸岁月盈余，了无拘束",
-          "link": "https://arthals.ink/",
-          "avatar": "https://cdn.arthals.ink/Arthals.png"
+          "name": "Ruan Yifeng's Network Log",
+          "intro": "Tech blog focusing on frontend, programming, and tech trends",
+          "link": "https://www.ruanyifeng.com/blog/",
+          "avatar": "https://www.ruanyifeng.com/favicon.ico"
         },
         {
-          "name": "CWorld Site",
-          "intro": "求知若愚，虚怀若谷",
-          "link": "https://cworld0.com/",
-          "avatar": "https://cravatar.cn/avatar/1ffe42aa45a6b1444a786b1f32dfa8aa?s=200"
+          "name": "Left Ears Mouse",
+          "intro": "Tech architect sharing technical insights and career development",
+          "link": "https://coolshell.cn/",
+          "avatar": "https://coolshell.cn/favicon.ico"
         }
       ]
     },
     {
-      "id_name": "inactive-links",
-      "desc": "Inactive or rule-breaking friends",
-      "link_list": []
-    },
-    {
-      "id_name": "special-links",
-      "desc": "Other special links",
+      "id_name": "recommended-games",
+      "desc": "Recommended Games - Quality games worth experiencing",
       "link_list": [
         {
-          "name": "虫洞",
-          "intro": "随机前往十年之约的成员博客",
-          "link": "https://www.foreverblog.cn/go.html",
-          "avatar": "/images/wormhole.png"
+          "name": "The Legend of Zelda: Breath of the Wild",
+          "intro": "Open-world adventure game with perfect exploration and puzzle-solving",
+          "link": "https://www.zelda.com/breath-of-the-wild/",
+          "avatar": "https://www.zelda.com/breath-of-the-wild/images/og-image.jpg"
         },
         {
-          "name": "开往",
-          "intro": "随机前往开往的成员博客",
-          "link": "https://www.travellings.cn/go.html",
-          "avatar": "https://www.travellings.cn/assets/travelling.png"
+          "name": "Genshin Impact",
+          "intro": "Open-world adventure RPG with stunning graphics and rich storyline",
+          "link": "https://genshin.hoyoverse.com/",
+          "avatar": "https://genshin.hoyoverse.com/favicon.ico"
+        }
+      ]
+    },
+    {
+      "id_name": "recommended-books",
+      "desc": "Recommended Books - Worth reading good books",
+      "link_list": [
+        {
+          "name": "Computer Systems: A Programmer's Perspective",
+          "intro": "Classic computer systems textbook for understanding underlying principles",
+          "link": "https://book.douban.com/subject/26912767/",
+          "avatar": "https://img3.doubanio.com/view/subject/l/public/s29494718.jpg"
+        },
+        {
+          "name": "Clean Code",
+          "intro": "Programming practice guide for improving code quality",
+          "link": "https://book.douban.com/subject/4199741/",
+          "avatar": "https://img2.doubanio.com/view/subject/l/public/s4103991.jpg"
         }
       ]
     }

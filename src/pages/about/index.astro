@@ -1,9 +1,12 @@
 ---
+
 import { Comment } from 'astro-pure/advanced'
 import { Button, Collapse, Spoiler, Timeline } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
 import Substats from '@/components/about/Substats.astro'
 import ToolSection from '@/components/about/ToolSection.astro'
+import Signature from '@/components/about/Signature.astro'
+import config from '@/site-config'
 
 const headings = [
   { depth: 2, slug: 'hobbies', text: 'Hobbies' },
@@ -15,62 +18,159 @@ const headings = [
 ---
 
 <PageLayout title='About' {headings} info='/about'>
-  <p>Developer / Designer</p>
+  <p>Developer / Researcher / Gamer</p>
   <p>
-    Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum
-    dissentiunt, cu meliore fuisset mei, vel quod voluptua ne. Ex dicat impedit mel, at eum oratio
-    possit voluptatum.
+    I am a student at Fudan University, pursuing a Bachelor of Engineering in Software Engineering.
+    I'm seeking internship opportunities in Quant Development & AI Research.
   </p>
   <p>
-    My motto: Stay hungry, Stay foolish. <Spoiler>这里可以夹私货，比如为什么要演奏春日影！</Spoiler>
+    Hardcore single-player gamer. Sometimes play FPS games with my friends. <Spoiler>No phone games!</Spoiler>
+  </p>
+  <p>
+     
   </p>
   <Button title='Sponsor Me' class='w-fit' href='/projects#sponsorship' style='ahead' />
 
   {/* general-talk */}
   <h2 id='hobbies'>Hobbies</h2>
   <ul>
-    <li>Lorem ipsum dolor sit amet, vidit suscipit at mei.</li>
+    <li>Games (FPS, Soulslike, Rougelike, Puzzle, etc.)</li>
     <li>
-      Quem denique mea id. Usu ei regione indoctum dissentiunt, cu meliore fuisset mei, vel quod
-      voluptua ne.
+      History (Ancient Chinese) & Philosophy (Western)
     </li>
-    <li>Ex dicat impedit mel, at eum oratio possit voluptatum.</li>
-    <li>Impetus fuisset ullamcorper pri cu, his posse iisque ad, aliquam honestatis usu id.</li>
+    <li>
+      Music & Singing (Chinese Pop, R&B, etc.)
+    </li>
+    <li>Magic & Cardistry (beginner-level)</li>
   </ul>
 
-  {/* tools */}
-  <h2 id='tools'>Tools</h2>
-  <p>Current support tools as follow:</p>
+  {/* stacks */}
+  <h2 id='stacks'>Stacks</h2>
+  <p>Here are my currently tech stacks:</p>
+  
   <ToolSection
     class='mb-5'
-    title='Design'
+    title='Programming Languages'
     tools={[
       {
-        name: 'Photoshop',
-        description: 'Picture Editing',
-        href: 'https://www.adobe.com/products/photoshop',
-        icon: import('@/assets/tools/photoshop.svg?raw')
+        name: 'Python',
+        description: 'Main Scripting Language',
+        href: 'https://www.python.org/',
+        icon: import('@/assets/tools/python.svg?raw')
       },
       {
-        name: 'Illustrator',
-        description: 'Vector Drawing',
-        href: 'https://www.adobe.com/products/illustrator',
-        icon: import('@/assets/tools/illustrator.svg?raw')
+        name: 'C++',
+        description: 'Main Programming Language',
+        href: 'https://www.cplusplus.com/',
+        icon: import('@/assets/tools/cpp.svg?raw')
       },
       {
-        name: 'After Effects',
-        description: 'Motion Graphics',
-        href: 'https://www.adobe.com/products/aftereffects',
-        icon: import('@/assets/tools/aftereffects.svg?raw')
+        name: 'C',
+        description: 'Seldom Used',
+        href: 'https://en.wikipedia.org/wiki/C_(programming_language)',
+        icon: import('@/assets/tools/c.svg?raw')
       },
       {
-        name: 'Premiere Pro',
-        description: 'Video Editing',
-        href: 'https://www.adobe.com/products/premiere',
-        icon: import('@/assets/tools/premiere.svg?raw')
+        name: 'Java',
+        description: 'Seldom Used',
+        href: 'https://www.java.com/',
+        icon: import('@/assets/tools/java.svg?raw')
       }
     ]}
   />
+  <ToolSection
+    class='mb-5'
+    title='AI'
+    tools={[
+      {
+        name: 'PyTorch',
+        description: 'Deep Learning Framework',
+        href: 'https://pytorch.org/',
+        icon: import('@/assets/tools/pytorch.svg?raw')
+      },
+      {
+        name: 'LangChain',
+        description: 'AI Application Framework',
+        href: 'https://www.langchain.com/',
+        icon: import('@/assets/tools/langchain.svg?raw')
+      },
+
+    ]}
+  />
+  <ToolSection
+    class='mb-5'
+    title='Frontend'
+    tools={[
+      {
+        name: 'Astro',
+        description: 'Static Site Generator',
+        href: 'https://astro.build/',
+        icon: import('@/assets/tools/astro.svg?raw')
+      },
+      {
+        name: 'Streamlit',
+        description: 'Data Visualization',
+        href: 'https://streamlit.io/',
+        icon: import('@/assets/tools/streamlit.svg?raw')
+      },
+      {
+        name: 'Angular',
+        description: 'Frontend Framework',
+        href: 'https://angular.io/',
+        icon: import('@/assets/tools/angular.svg?raw')
+      }
+    ]}  
+  />
+
+  <ToolSection
+    class='mb-5'
+    title='Backend'
+    tools={[
+      {
+        name: 'Django',
+        description: 'Python Web Framework',
+        href: 'https://www.djangoproject.com/',
+        icon: import('@/assets/tools/django.svg?raw')
+      },
+      {
+        name: 'Spring Boot',
+        description: 'Java Web Framework',
+        href: 'https://spring.io/projects/spring-boot',
+        icon: import('@/assets/tools/spring-boot.svg?raw')
+      },
+    ]}
+  />
+
+  <ToolSection
+    class='mb-5'
+    title='Utilities'
+    tools={[
+      {
+        name: 'Docker',
+        description: 'Containerization',
+        href: 'https://www.docker.com/',
+        icon: import('@/assets/tools/docker.svg?raw')
+      },
+      {
+        name: 'Git',
+        description: 'Version Control',
+        href: 'https://git-scm.com/',
+        icon: import('@/assets/tools/git.svg?raw')
+      },
+      {
+        name: 'Linux',
+        description: 'Operating System',
+        href: 'https://www.linux.org/',
+        icon: import('@/assets/tools/linux.svg?raw')
+
+      },
+    ]}
+  />
+
+  {/* tools */}
+  <h2 id='tools'>Tools</h2>
+  <p>These are my currently used tools for coding and daily work:</p>
+  
   <ToolSection
     class='mb-5'
     title='Productivity'
@@ -82,16 +182,16 @@ const headings = [
         icon: import('@/assets/tools/chrome.svg?raw')
       },
       {
-        name: 'Firefox',
-        description: 'Browser',
-        href: 'https://www.mozilla.org/en-US/firefox',
-        icon: import('@/assets/tools/firefox.svg?raw')
+        name: 'ChatGPT',
+        description: 'AI Assistant',
+        href: 'https://chatgpt.com/',
+        icon: import('@/assets/tools/chatgpt.svg?raw')
       },
       {
-        name: 'Notion',
+        name: 'Obsidian',
         description: 'Note Taking',
-        href: 'https://www.notion.so/',
-        icon: import('@/assets/tools/notion.svg?raw')
+        href: 'https://obsidian.md/',
+        icon: import('@/assets/tools/obsidian.svg?raw')
       },
       {
         name: 'Typora',
@@ -112,44 +212,32 @@ const headings = [
         icon: import('@/assets/tools/vscode.svg?raw')
       },
       {
-        name: 'Neovim',
+        name: 'Cursor',
         description: 'IDE',
-        href: 'https://neovim.io/',
-        icon: import('@/assets/tools/neovim.svg?raw')
+        href: 'https://cursor.com/',
+        icon: import('@/assets/tools/cursor.svg?raw')
       },
       {
-        name: 'Sublime Text',
+        name: 'JetBrains',
         description: 'IDE',
-        href: 'https://www.sublimetext.com/',
-        icon: import('@/assets/tools/sublime.svg?raw')
+        href: 'https://www.jetbrains.com/',
+        icon: import('@/assets/tools/jetbrains.svg?raw')
       }
     ]}
   />
   <ToolSection
     class='mb-5'
-    title='Environment'
+    title='Environment & Hardware'
     tools={[
       {
-        name: 'Arch Linux',
-        description: 'Linux Distribution',
-        href: 'https://archlinux.org/',
-        icon: import('@/assets/tools/archlinux.svg?raw')
-      },
-      {
         name: 'Ubuntu 24.04 LTS',
-        description: 'Linux Distribution',
+        description: 'WSL',
         href: 'https://ubuntu.com/',
         icon: import('@/assets/tools/ubuntu.svg?raw')
       },
       {
-        name: 'MacOS Tahoe',
-        description: 'MacBook Air',
-        href: 'https://www.apple.com/macos/',
-        icon: import('@/assets/tools/apple.svg?raw')
-      },
-      {
         name: 'Windows 11',
-        description: 'Framework Laptop 16',
+        description: 'ROG Zephyrus G16 2022',
         href: 'https://news.microsoft.com/windows11-general-availability/',
         icon: import('@/assets/tools/windows11.svg?raw')
       }
@@ -159,52 +247,76 @@ const headings = [
   {/* social-networks */}
   <h2 id='social-networks'>Social Networks</h2>
   <p>
-    Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum
-    dissentiunt, cu meliore fuisset mei, vel quod voluptua ne.
+    <Spoiler>I will not tell you that the stats below except Steam game counts are not real-time. </Spoiler>
   </p>
   <Substats
     stats={[
       {
         platform: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/cworld1',
+        link: 'https://github.com/tommydzz',
         text: 'followers',
-        api: 'github/cworld1'
+        count: 1
       },
       {
-        platform: 'Telegram',
-        icon: 'telegram',
-        color: '#2ca5e0',
-        link: 'https://t.me/cworld0_cn',
-        text: 'subscribers',
-        api: 'telegram/cworld0_cn'
+        platform: 'Zhihu',
+        icon: 'zhihu',
+        color: '#0084ff',
+        link: 'https://www.zhihu.com/people/dong-zi-zhen-9',
+        text: 'followers',
+        count: 18
       },
       {
-        platform: 'Weibo',
-        icon: 'weibo',
-        color: '#e71f19',
-        link: 'https://weibo.com/cworld0',
+        platform: 'Bilibili',
+        icon: 'bilibili',
+        color: '#fe7398',
+        link: 'https://space.bilibili.com/3493291171514479',
         text: 'followers',
-        api: 'weibo/5501674056'
+        count: 1
       },
       {
         platform: 'Steam',
         icon: 'steam',
         color: '#50769d',
-        link: 'https://steamcommunity.com/id/cworld',
+        link: 'https://steamcommunity.com/profiles/76561198283765629/',
         text: 'games',
-        api: 'steamgames/76561199021278120'
+        api: 'steamgames/76561198283765629'
+      },
+    ]}
+  />
+  <h2 id='education'>Education</h2>
+  <Timeline
+    events={[
+      {
+        date: '2022-09-01',
+        content: '<a href="https://www.fudan.edu.cn"target="_blank">Fudan University</a>'
+      },
+      {
+        date: '2019-09-01',
+        content: '<a href="https://www.fdfz.edu.cn"target="_blank">High School Affiliated to Fudan University</a>'
+      },
+      {
+        date: '2015-09-01',
+        content: '<a href="https://lida.hpe.cn/"target="_blank">Shanghai Lida Middle School</a>'
+      },
+      {
+        date: '2010-09-01',
+        content: '<a href="https://lushixiao.hpe.cn"target="_blank">Luwan Experimental Primary School Affiliated to Shanghai Normal University</a>'
       }
     ]}
   />
 
-  {/* gossips */}
-  <h2 id='gossips'>Gossips</h2>
-  <Collapse title='Lorem ipsum'>
-    Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum
-    dissentiunt, cu meliore fuisset mei, vel quod voluptua ne. Ex dicat impedit mel, at eum oratio
-    possit voluptatum.
-  </Collapse>
+  <h2 id='experience'>Experience</h2>
+  <Timeline
+    events={[
+      {
+        date: '2024-07-22',
+        content:
+          '<a href="https://www.sap.com/"target="_blank">SAP AI Application Developer (Intern)</a>'
+      }
+    ]}
+  />
+
 
   {/* about-blog */}
   <h2 id='about-blog'>About Blog</h2>
@@ -212,18 +324,18 @@ const headings = [
   <Timeline
     events={[
       {
-        date: '2024-04-29',
+        date: '2025-08-14',
         content:
-          'Website refactored using <a href="https://astro.build/" target="_blank">Astro</a> and <a href="https://github.com/srleom/astro-theme-resume" target="_blank">Astro Theme Resume</a>'
+          'Create a new website using <a href="https://astro.build/" target="_blank">Astro</a> and <a href="https://github.com/srleom/astro-theme-resume" target="_blank">Astro Theme Resume</a>'
       },
       {
-        date: '2024-07-26',
+        date: '2025-03-01',
         content:
-          'Website abstracted as a theme and published on <a href="https://github.com/cworld1/astro-theme-pure"target="_blank">Github</a>'
+          'Refactored the website using <a href="https://github.com/adityatelange/hugo-PaperMod" target="_blank">Hugo PaperMod Theme</a>'
       },
       {
-        date: '2024-07-27',
-        content: 'Began writing website docs'
+        date: '2022-12-15',
+        content: 'First version of the website, using <a href="https://hexo.io/" target="_blank">Hexo</a>'
       }
     ]}
   />
@@ -257,5 +369,6 @@ const headings = [
       >
     </li>
   </ul>
+  {<Signature />}
   <Comment slot='bottom' />
 </PageLayout>

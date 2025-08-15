@@ -28,11 +28,11 @@ Next, we will introduce each aspect in detail.
 
 ### Configuration Files
 
-See [Configuration Files](/docs/setup/configuration) for details.
+Configuration files are located in the `src/site.config.ts` file.
 
 #### Waline Comment System
 
-See [Waline Comment System](/docs/integrations/comment) for details.
+Waline comment system configuration can be found in the theme configuration.
 
 #### Footer
 
@@ -78,4 +78,4 @@ It is recommended to find new icons on the following websites to maintain consis
 
 ## Deployment Mode
 
-See [Deployment](/docs/deployment) for details.
+Deployment configuration can be found in the theme documentation.
