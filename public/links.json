@@ -2,55 +2,61 @@
   "friends": [
     {
       "id_name": "recommended-bloggers",
-      "desc": "Recommended Bloggers - High-quality tech, life, and thinking bloggers",
+      "desc": "推荐博主 - 高质量的技术、生活和思考博主",
       "link_list": [
         {
-          "name": "Ruan Yifeng's Network Log",
-          "intro": "Tech blog focusing on frontend, programming, and tech trends",
-          "link": "https://www.ruanyifeng.com/blog/",
-          "avatar": "https://www.ruanyifeng.com/favicon.ico"
+          "name": "数字游牧人",
+          "intro": "非常牛的个人主页，技术分享和生活感悟",
+          "link": "https://qzq.at/",
+          "avatar": "https://qzq.at/favicon.ico"
         },
         {
-          "name": "Left Ears Mouse",
-          "intro": "Tech architect sharing technical insights and career development",
-          "link": "https://coolshell.cn/",
-          "avatar": "https://coolshell.cn/favicon.ico"
+          "name": "Arthals",
+          "intro": "北大医学生，计算机双学位，我的灵感来源",
+          "link": "https://arthals.ink/",
+          "avatar": "https://cdn.arthals.ink/Arthals.png"
         }
       ]
     },
     {
       "id_name": "recommended-games",
-      "desc": "Recommended Games - Quality games worth experiencing",
+      "desc": "推荐游戏 - 值得体验的优质游戏",
       "link_list": [
         {
-          "name": "The Legend of Zelda: Breath of the Wild",
-          "intro": "Open-world adventure game with perfect exploration and puzzle-solving",
-          "link": "https://www.zelda.com/breath-of-the-wild/",
-          "avatar": "https://www.zelda.com/breath-of-the-wild/images/og-image.jpg"
+          "name": "艾尔登法环",
+          "intro": "开放世界魂系游戏，完美的探索体验和战斗系统",
+          "link": "https://en.bandainamcoent.eu/elden-ring/elden-ring",
+          "avatar": "https://upload.wikimedia.org/wikipedia/zh/6/62/Elden_Ring_cover.png"
         },
         {
-          "name": "Genshin Impact",
-          "intro": "Open-world adventure RPG with stunning graphics and rich storyline",
-          "link": "https://genshin.hoyoverse.com/",
-          "avatar": "https://genshin.hoyoverse.com/favicon.ico"
+          "name": "只狼：影逝二度",
+          "intro": "动作冒险游戏，精妙的战斗机制和日本战国背景",
+          "link": "https://www.sekirothegame.com/",
+          "avatar": "/images/sekiro.jpg"
+        },
+        {
+          "name": "博德之门3",
+          "intro": "经典CRPG续作，深度剧情和丰富的角色扮演体验",
+          "link": "https://baldursgate3.game/",
+          "avatar": "/images/bg3.jpg"
         }
       ]
     },
     {
       "id_name": "recommended-books",
-      "desc": "Recommended Books - Worth reading good books",
+      "desc": "推荐书籍 - 值得阅读的好书",
       "link_list": [
         {
-          "name": "Computer Systems: A Programmer's Perspective",
-          "intro": "Classic computer systems textbook for understanding underlying principles",
+          "name": "深入理解计算机系统",
+          "intro": "经典计算机系统教材，理解底层原理必读",
           "link": "https://book.douban.com/subject/26912767/",
-          "avatar": "https://img3.doubanio.com/view/subject/l/public/s29494718.jpg"
+          "avatar": "/images/csapp.jpg"
         },
         {
-          "name": "Clean Code",
-          "intro": "Programming practice guide for improving code quality",
-          "link": "https://book.douban.com/subject/4199741/",
-          "avatar": "https://img2.doubanio.com/view/subject/l/public/s4103991.jpg"
+          "name": "算法导论",
+          "intro": "计算机科学经典教材，算法设计与分析权威指南",
+          "link": "https://book.douban.com/subject/20432061/",
+          "avatar": "/images/clrs.jpg"
         }
       ]
     }
