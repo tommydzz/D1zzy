@@ -1,103 +1,81 @@
-# Astro Theme Pure
+# D1zzy 的个人网站
 
 [English](./README.md) | [简体中文](./README-zh-CN.md)
 
-一个由 Astro 构建的轻便简洁、快速强大的博客主题。
+欢迎来到我的个人网站！这里是我分享想法、项目和推荐的地方，使用 Astro 和 Pure 主题构建。
 
-[![GitHub deployments](https://img.shields.io/github/deployments/cworld1/astro-theme-pure/production?style=flat&logo=vercel&label=vercel)](https://astro-pure.js.org/)
-[![NPM Version](https://img.shields.io/npm/v/astro-pure?logo=npm&style=flat)](https://www.npmjs.com/package/astro-pure)
-[![GitHub Release](https://img.shields.io/github/v/release/cworld1/astro-theme-pure?include_prereleases&style=flat&label=template)](https://github.com/cworld1/astro-theme-pure/releases)
-[![GitHub License](https://img.shields.io/github/license/cworld1/astro-theme-pure?style=flat)](https://github.com/cworld1/astro-theme-pure/blob/main/LICENSE)
+## 🌟 关于我
 
-![image](./.github/assets/header.webp)
-![image](./.github/assets/body.webp)
+你好，我是 D1zzy！这是我的网络个人空间，在这里我分享：
 
-> [!WARNING]
-> 主题模板 v4.0.2^ CSS 引擎被换到 UnoCSS。更稳定版本为 [v4.0.1-beta](https://github.com/cworld1/astro-theme-pure/tree/v4.0.1-beta)。已知问题：
->
-> 1. Head 标签和自定义选项仍在开发中（已经暴露模板直接改）
+- **博客文章**：关于技术、生活和一切有趣想法的思考
+- **项目展示**：我的作品和实验项目
+- **推荐内容**：我精心挑选的博主、游戏和书籍推荐
 
-## 简介
+## 🚀 特色功能
 
-查看 [预览 →](https://astro-pure.js.org/)
+- **快速响应**：基于 Astro 构建，性能优异
+- **简洁设计**：极简美学，专注于内容本身
+- **全站搜索**：强大的搜索功能
+- **SEO 优化**：针对搜索引擎优化
+- **RSS 订阅**：订阅我的最新文章
+- **深色/浅色模式**：根据系统偏好自动切换主题
 
-## :fire: 特性
+## 📝 内容板块
 
-- [x] :rocket: 快速高性能
-- [x] :star: 简单干净的设计
-- [x] :iphone: 响应式设计
-- [x] :mag: 使用 [pagefind](https://pagefind.app/) 构建的全站搜索
-- [x] :world_map: 站点地图和 RSS 订阅
-- [x] :spider_web: 友好的 SEO
-- [x] :book: 目录（table of contents）
-- [x] :framed_picture: 动态为文章生成可供三方媒体预览的分享图像
-- [x] :framed_picture: Mediumzoom 图像灯箱
+### 博客
 
-## :package: 组件
+关于技术、编程和生活体验的思考。我写我感兴趣的内容和一路上学到的东西。
 
-主题包含了许多组件，不仅可以在主题中使用，还可以在其他 Astro 项目中使用。
+### 项目
 
-> 对于其他 Astro 项目，需要 UnoCSS。
+展示我的作品、实验和对开源社区的贡献。
 
-- 基础组件：`Aside`、`Tabs`、`Timeline`、`Steps`、`Spoiler`...
-- 高级组件：`GithubCard`、`LinkPreview`、`Quote`、`QRCode`...
+### 推荐链接
 
-## :white_check_mark: Lighthouse 分数
+我的精选收藏：
 
-[![lighthouse-score](./.github/assets/lighthouse-score.png)](https://pagespeed.web.dev/analysis/https-cworld-top/o229zrt5o4?form_factor=mobile&hl=en)
+- **推荐博主**：我关注的技术和生活博主
+- **推荐游戏**：给我留下深刻印象的游戏
+- **推荐书籍**：塑造我思维方式的书籍
 
-## 文档
+## 🛠️ 技术栈
 
-[文档](https://astro-pure.js.org/docs) | [展示台](https://github.com/cworld1/astro-theme-pure/issues/10)
+- **框架**：[Astro](https://astro.build/)
+- **主题**：[Astro Theme Pure](https://github.com/cworld1/astro-theme-pure)
+- **样式**：UnoCSS
+- **部署**：Vercel
+- **搜索**：Pagefind
 
-## NPM 包
+## 📖 本地开发
 
-在 NPM 上查看：[astro-theme-pure](https://www.npmjs.com/package/astro-pure)
+如果你想在本地运行这个网站：
 
-## 本地开发
-
-环境要求：
-
-- [Nodejs](https://nodejs.org/): 18.0.0+
-
-克隆存储库：
-
-```shell
-git clone https://github.com/cworld1/astro-theme-pure.git
+```bash
+# 克隆仓库
+git clone <你的仓库地址>
 cd astro-theme-pure
+
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
 ```
 
-有用的命令：
-
-```shell
-# install dependencies
-bun install
-
-# start the dev server
-bun dev
-
-# build the project
-bun run build
-
-# preview (after the build)
-bun preview
-
-# create a new post
-bun new-post
-```
-
-## 贡献
-
-为了花更多时间编写代码，减少在空白上纠结的时间，本项目使用代码约定和样式来鼓励一致性。风格一致的代码更容易（且更不容易出错）进行审查、维护和理解。
-
-## 鸣谢
-
-- [Astro Cactus](https://github.com/chrismwilliams/astro-theme-cactus)
-- [Astro Resume](https://github.com/srleom/astro-theme-resume)
-- [Starlight](https://github.com/withastro/starlight)
-
-## 许可证
+## 📄 许可证
 
 本项目基于 Apache 2.0 许可证。
 
-[![Star History Chart](https://api.star-history.com/svg?repos=cworld1/astro-theme-pure&type=Date)](https://star-history.com/#cworld1/astro-theme-pure&Date)
+## 🙏 致谢
+
+- 基于 [Astro Theme Pure](https://github.com/cworld1/astro-theme-pure) 构建
+- 受到开源社区的启发
+- 感谢所有我引用和推荐的创作者
+
+---
+
+_"对于不可言说的东西，我们必须保持沉默。"_ - 路德维希·维特根斯坦
