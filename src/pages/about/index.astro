@@ -1,11 +1,10 @@
 ---
-
 import { Comment } from 'astro-pure/advanced'
 import { Button, Collapse, Spoiler, Timeline } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
+import Signature from '@/components/about/Signature.astro'
 import Substats from '@/components/about/Substats.astro'
 import ToolSection from '@/components/about/ToolSection.astro'
-import Signature from '@/components/about/Signature.astro'
 import config from '@/site-config'
 
 const headings = [
@@ -26,30 +25,26 @@ const headings = [
     I'm seeking internship opportunities in Quant Development & AI Research.
   </p>
   <p>
-    Hardcore single-player gamer. Sometimes play FPS games with my friends. <Spoiler>No phone games!</Spoiler>
+    Hardcore single-player gamer. Sometimes play FPS games with my friends. <Spoiler
+      >No phone games!</Spoiler
+    >
   </p>
-  <p>
-     
-  </p>
+  <p></p>
   <Button title='Sponsor Me' class='w-fit' href='/projects#sponsorship' style='ahead' />
 
   {/* general-talk */}
   <h2 id='hobbies'>Hobbies</h2>
   <ul>
     <li>Games (FPS, Soulslike, Rougelike, Puzzle, etc.)</li>
-    <li>
-      History (Ancient Chinese) & Philosophy (Western)
-    </li>
-    <li>
-      Music & Singing (Chinese Pop, R&B, etc.)
-    </li>
+    <li>History (Ancient Chinese) & Philosophy (Western)</li>
+    <li>Music & Singing (Chinese Pop, R&B, etc.)</li>
     <li>Magic & Cardistry (beginner-level)</li>
   </ul>
 
   {/* stacks */}
   <h2 id='stacks'>Stacks</h2>
   <p>Here are my currently tech stacks:</p>
-  
+
   <ToolSection
     class='mb-5'
     title='Programming Languages'
@@ -95,8 +90,7 @@ const headings = [
         description: 'AI Application Framework',
         href: 'https://www.langchain.com/',
         icon: import('@/assets/tools/langchain.svg?raw')
-      },
-
+      }
     ]}
   />
   <ToolSection
@@ -121,7 +115,7 @@ const headings = [
         href: 'https://angular.io/',
         icon: import('@/assets/tools/angular.svg?raw')
       }
-    ]}  
+    ]}
   />
 
   <ToolSection
@@ -139,7 +133,7 @@ const headings = [
         description: 'Java Web Framework',
         href: 'https://spring.io/projects/spring-boot',
         icon: import('@/assets/tools/spring-boot.svg?raw')
-      },
+      }
     ]}
   />
 
@@ -164,15 +158,14 @@ const headings = [
         description: 'Operating System',
         href: 'https://www.linux.org/',
         icon: import('@/assets/tools/linux.svg?raw')
-
-      },
+      }
     ]}
   />
 
   {/* tools */}
   <h2 id='tools'>Tools</h2>
   <p>These are my currently used tools for coding and daily work:</p>
-  
+
   <ToolSection
     class='mb-5'
     title='Productivity'
@@ -249,7 +242,9 @@ const headings = [
   {/* social-networks */}
   <h2 id='social-networks'>Social Networks</h2>
   <p>
-    <Spoiler>I will not tell you that the stats below except Steam game counts are not real-time. </Spoiler>
+    <Spoiler
+      >I will not tell you that the stats below except Steam game counts are not real-time.
+    </Spoiler>
   </p>
   <Substats
     stats={[
@@ -283,7 +278,7 @@ const headings = [
         link: 'https://steamcommunity.com/profiles/76561198283765629/',
         text: 'games',
         api: 'steamgames/76561198283765629'
-      },
+      }
     ]}
   />
   <h2 id='education'>Education</h2>
@@ -295,7 +290,8 @@ const headings = [
       },
       {
         date: '2019-09-01',
-        content: '<a href="https://www.fdfz.edu.cn"target="_blank">High School Affiliated to Fudan University</a>'
+        content:
+          '<a href="https://www.fdfz.edu.cn"target="_blank">High School Affiliated to Fudan University</a>'
       },
       {
         date: '2015-09-01',
@@ -303,7 +299,8 @@ const headings = [
       },
       {
         date: '2010-09-01',
-        content: '<a href="https://lushixiao.hpe.cn"target="_blank">Luwan Experimental Primary School Affiliated to Shanghai Normal University</a>'
+        content:
+          '<a href="https://lushixiao.hpe.cn"target="_blank">Luwan Experimental Primary School Affiliated to Shanghai Normal University</a>'
       }
     ]}
   />
@@ -318,7 +315,6 @@ const headings = [
       }
     ]}
   />
-
 
   {/* about-blog */}
   <h2 id='about-blog'>About Blog</h2>
@@ -337,7 +333,8 @@ const headings = [
       },
       {
         date: '2022-12-15',
-        content: 'First version of the website, using <a href="https://hexo.io/" target="_blank">Hexo</a>'
+        content:
+          'First version of the website, using <a href="https://hexo.io/" target="_blank">Hexo</a>'
       }
     ]}
   />
@@ -370,6 +367,6 @@ const headings = [
       >
     </li>
   </ul>
-  {<Signature />}
+  {(<Signature />)}
   <Comment slot='bottom' />
 </PageLayout>
